@@ -8,6 +8,7 @@ type Props = {};
 export default function App({}: Props) {
   return (
     <Routes>
+      asdasd
       <Route path="/auth/login" element={<LoginPage />} />
       <Route path="/auth/register" element={<RegisterPage />} />
     </Routes>

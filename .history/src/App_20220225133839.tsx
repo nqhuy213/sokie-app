@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { LoginPage } from "./pages/LoginPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { app } from "./firebase-config";
+
 type Props = {};
 
 export default function App({}: Props) {
