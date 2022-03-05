@@ -17,7 +17,6 @@ export default function App() {
     const auth = getAuth()
     onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
-        console.log('sdfsdf')
         setUser(currentUser)
       } else {
         setUser(null)
