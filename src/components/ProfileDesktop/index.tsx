@@ -1,1 +1,1 @@
-export { default as ProfileDesktop } from "./ProfileDesktop";
+export { default as ProfileDesktop } from './ProfileDesktop'

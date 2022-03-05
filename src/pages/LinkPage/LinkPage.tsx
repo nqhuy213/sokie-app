@@ -1,7 +1,5 @@
-import { ProfileDesktop } from "../../components/ProfileDesktop";
-
-type Props = {};
+import { ProfileDesktop } from '../../components/ProfileDesktop'
 
 export default function LinkPage() {
-  return <ProfileDesktop />;
+  return <ProfileDesktop />
 }
