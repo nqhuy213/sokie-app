@@ -1,11 +1,10 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 
-type Props = {}
-
-export default function LoginPage({}: Props) {
+export default function LoginPage() {
   const handleLogin = async () => {
     const auth = getAuth()
     const response = await signInWithEmailAndPassword(auth, 'nqhuy213@gmail.com', 'huybeo213')
+    console.log(response)
   }
 
   return (

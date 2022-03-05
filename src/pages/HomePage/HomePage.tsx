@@ -1,10 +1,7 @@
 import { getAuth } from 'firebase/auth'
-import React from 'react'
 import { Link } from 'react-router-dom'
 
-type Props = {}
-
-export default function HomePage({}: Props) {
+export default function HomePage() {
   const handleLogout = () => {
     const auth = getAuth()
     auth.signOut()

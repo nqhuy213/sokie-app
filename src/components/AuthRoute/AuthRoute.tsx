@@ -1,7 +1,6 @@
-import React from 'react'
-import { Navigate, Outlet, Route } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
 
-type Props = {
+interface Props {
   redirect: string
   authed: boolean
 }

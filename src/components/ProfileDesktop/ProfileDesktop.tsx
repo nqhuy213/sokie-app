@@ -1,14 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import styled from 'styled-components'
 
-type Props = {
-  avatarUrl: string
-  name: string
-  title: string
-  description: string
-  socialLinks: SocialLink[]
-}
-
 const DiagnolBackground = styled.div`
   font-family: 'Electrolize', sans-serif;
   background: linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0) 0%),

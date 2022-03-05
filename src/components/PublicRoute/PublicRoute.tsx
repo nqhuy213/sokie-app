@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from 'react-router-dom'
 
-type Props = {
+interface Props {
   authed: boolean
   redirect: string
 }
