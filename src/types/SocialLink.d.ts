@@ -1,5 +1,5 @@
 declare type SocialLink = {
-  origin: string,
-  url: string,
-  iconUrl: string,
+  origin: string
+  url: string
+  iconUrl: string
 }
