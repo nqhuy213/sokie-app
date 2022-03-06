@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Sokie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sokie App is a platform that allows influencers/content creators create, customise and promote their content channels all in one link.
 
-## Available Scripts
+# Overview
 
-In the project directory, you can run:
+This `README.md` documents how to setup the project, summarize the development process.
 
-### `npm start`
+# Things to Learn:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These links should act as a starting point.
+- [Create React App](https://create-react-app.dev/docs/getting-started/)
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+- [Cloud Firestore](https://firebase.google.com/docs/firestore)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Deployment Workflow
 
-### `npm test`
+We are using Vercel to manage the continuous deployment. `develop` and `master` are two main branches for Staging and Production respectively.
+- Staging instance: https://sokie-app-staging.vercel.app/
+- Production instance: https://sokie-app-production.vercel.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started
 
-### `npm run build`
+1. Install [Node.js/npm](https://nodejs.org/en/download/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Fallback Node.js to version 17.4.0.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `sudo npm install -g n`.
+- `sudo n 17.4.0`.
+- Check via. `node --version`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies: Run `npm install` from this repo's root directory
+4. Connect to Firebase
 
-### `npm run eject`
+- Create Firebase project for local use in [Firebase Console](https://console.firebase.google.com). 
+- Use [this tutorial](https://firebase.google.com/docs/web/setup?authuser=1&hl=en) to create web app in the project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Run `cp .env.example .env`.
+6. Add the Firebase app configuration values to the `.env` file to connect Firebase to your local instance.
+7. Run `npm run start` and go to https://localhost:3000.
