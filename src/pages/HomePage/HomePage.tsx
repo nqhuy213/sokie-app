@@ -1,10 +1,9 @@
-import { getAuth } from 'firebase/auth'
 import { Link } from 'react-router-dom'
+import { signOut } from '../../firebase-config'
 
 export default function HomePage() {
   const handleLogout = () => {
-    const auth = getAuth()
-    auth.signOut()
+    signOut()
   }
   return (
     <div>

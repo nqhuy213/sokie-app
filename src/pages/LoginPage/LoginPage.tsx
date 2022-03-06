@@ -1,10 +1,8 @@
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
-import { signInWithFacebook, signInWithGoogle } from '../../firebase-config'
+import { signInWithEmail, signInWithFacebook, signInWithGoogle } from '../../firebase-config'
 
 export default function LoginPage() {
   const handleLogin = async () => {
-    const auth = getAuth()
-    const response = await signInWithEmailAndPassword(auth, 'nqhuy213@gmail.com', 'huybeo213')
+    const response = await signInWithEmail('nqhuy213@gmail.com', 'huybeo213')
     console.log(response)
   }
 

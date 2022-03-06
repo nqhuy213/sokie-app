@@ -1,10 +1,9 @@
-import { createUserWithEmailAndPassword, getAuth, sendEmailVerification } from 'firebase/auth'
+import { sendEmailVerification } from 'firebase/auth'
+import { registerWithEmail } from '../../firebase-config'
 
 export default function RegisterPage() {
   const handleOnClick = async () => {
-    const auth = getAuth()
-    const response = await createUserWithEmailAndPassword(auth, 'nqhuy213@gmail.com', 'huybeo213')
-    // tslint:disable-next-line: no-console
+    const response = await registerWithEmail('nqhuy213@gmail.com', 'huybeo213')
     await sendEmailVerification(response.user)
     console.log(response)
   }
