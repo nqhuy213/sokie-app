@@ -1,4 +1,5 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithFacebook, signInWithGoogle } from '../../firebase-config'
 
 export default function LoginPage() {
   const handleLogin = async () => {
@@ -7,10 +8,20 @@ export default function LoginPage() {
     console.log(response)
   }
 
+  const handleLoginWithGoogle = async () => {
+    const response = await signInWithGoogle()
+    console.log(response)
+  }
+  const handleLoginWithFacebook = async () => {
+    const response = await signInWithFacebook()
+    console.log(response)
+  }
+
   return (
     <div>
-      <button>Log user</button>
       <button onClick={handleLogin}>Login</button>;
+      <button onClick={handleLoginWithGoogle}>Login with email</button>
+      <button onClick={handleLoginWithFacebook}>Login with facebook</button>
     </div>
   )
 }
